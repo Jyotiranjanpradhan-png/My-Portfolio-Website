@@ -1,322 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jyoti- Developer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleleapis.com/css2?family=Pooppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
+   <title>Jyoti Ranjan Pradhan | Portfolio</title>
 
-        body {
-            background-color: rgb(0, 0, 33);
-            color: white;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 80px;
-            background-color: rgb(18, 18, 49);
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            list-style: none;
-            margin: 0 23px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            transition: 0.4s;
-        }
-
-        nav ul li a:hover {
-            color: rgb(141, 141, 228);
-            font-size: 1.5rem;
-        }
-
-        main hr {
-            border: 0;
-            background: #9c97f1;
-            height: 1.2px;
-            margin: 60px 84px;
-        }
-
-        .left {
-            font-size: 1.5rem;
-        }
-
-        .firstsection {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 130px 0;
-        }
-
-        .firstsection>div {
-            width: 30%;
-
-        }
-
-        .leftsection {
-            font-size: 2.3rem;
-
-
-        }
-        .leftsection .buttons{
-            padding: 50px 0;
-        }
-        .leftsection .btn {
-            padding: 12px;
-            background-color: #1e2167;
-            color: white;
-            border: 2px solid white;
-            border-radius: 6px;
-            font-size: 20px;
-            cursor: pointer;
-        }
-
-        .rightsection img {
-            width: 80%;
-        }
-
-        .purple {
-            color: rgb(150, 85, 211);
-        }
-
-        .text-gray {
-            color: gray;
-        }
-
-        #element {
-            color: rgb(150, 85, 211);
-        }
-
-        .secondSection {
-            max-width: 80vw;
-            margin: auto;
-            height: 80vh;
-
-        }
-
-        .secondSection h1 {
-            font-size: 1.9rem;
-        }
-
-        .secondSection .box {
-            background: white;
-            width: 77vw;
-            height: 2px;
-            margin: 56px 0;
-            display: flex;
-        }
-
-        .secondSection .vertical {
-            height: 93px;
-            width: 1px;
-            background-color: white;
-            margin: 0 100px;
-        }
-
-        .image-top {
-            width: 23px;
-            position: relative;
-            top: -32px;
-            left: -9px;
-        }
-
-        .vertical-title {
-            position: relative;
-            top: 75px;
-            width: 150px;
-            font-size: 14px;
-        }
-
-        .vertical-desc {
-            position: relative;
-            top: 86px;
-            color: gray;
-            width: 150px;
-            font-size: 9px;
-        }
-
-        .footer {
-            background-color: gray;
-
-        }
-
-        .footer {
-            display: flex;
-            padding: 23px 122px;
-            justify-content: space-evenly;
-        }
-
-        .footer ul {
-            list-style: none;
-        }
-
-        .footer>div {
-            width: 223px;
-        }
-
-        footer .footer-rights {
-            text-align: center;
-            color: gray;
-            padding: 12px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-    <header>
-        <nav>
-            <div class="left">Jyoti's portfolio</div>
-            <div class="right">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Services</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact Me</a></li>
-                </ul>
-            </div>
-
+    <header class="header">
+        <a href="" class="logo">Portfolio</a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#service">Services</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
+    
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, I'm</h3>
+            <h1>Jyoti Ranjan Pradhan</h1>
+            <h3>I am a <span class="multiple-text">frontend Developer</span></h3>
+            <p>I am a passionate Frontend Developer and Computer Science student. 
+               I enjoy creating responsive websites using HTML, CSS, and JavaScript. 
+               I am always eager to learn new technologies and improve my skills.</p>
 
-    <main>
-        <section class="firstsection">
-            <div class="leftsection">
-                Hi, My name is <span class="purple">Jyoti Ranjan</span>
+            <div class="social-media">
+                 <a href="https://www.instagram.com/its_jyoti_ranjan_?igsh=MTF1N25iZmVzaDd3aw==" target="_blank">
+                    <i class="fa-brands fa-square-instagram"></i> </a>
+                <a href="https://www.linkedin.com/in/jyoti-ranjan-pradhan-090a9a34a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Jyotiranjanpradhan-png" target="_blank"><i class="fa-brands fa-github"></i></a>
 
-                <div>and I am a passionate</div>
+                <a href="https://www.facebook.com/share/1AyaMQ5cuU/"><i class="fa-brands fa-facebook"></i></a>
+                
+            </div>
+            <button class="btn">
+             <a href="c:\Users\DELL\Downloads\jyoti Ranjan CV.pdf" download>Download CV</a>
+                
 
-                <span id="element"></span>
-                <div class="buttons">
-                    <button class="btn">Download resume</button>
-                    <button class="btn">Visit Github</button>
-                </div>
-            </div>
-            <div class="rightsection">
-                <img src="bg.png" alt="">
-            </div>
-        </section>
-        <hr>
-        <section class="secondSection">
-            <span class="text-gray">What I have done so far</span>
+            </button>
+        </div>
 
-            <h1>Technical Skills</h1>
+        <div class="home-img">
+            <img src="jyoti.jpg" alt="Jyoti Ranjan Pradhan profile">
 
-            <div class="box">
-                <div class="vertical">
-                    <img class="image-top" src="html1.png" alt="">
-                    <div class="vertical-title">
-                        HTML Developer
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Libero unde omnis ullam, enim facilis
-                        possimus accusamus ab! Dolores mollitia odio quos. facilis,
-                        incidunt?
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="html1.png" alt="">
-                    <div class="vertical-title">
-                        HTML Developer
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Libero unde omnis ullam, enim facilis
-                        possimus accusamus ab! Dolores mollitia odio quos. facilis,
-                        incidunt?
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="html1.png" alt="">
-                    <div class="vertical-title">
-                        HTML Developer
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Libero unde omnis ullam, enim facilis
-                        possimus accusamus ab! Dolores mollitia odio quos. facilis,
-                        incidunt?
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="html1.png" alt="">
-                    <div class="vertical-title">
-                        HTML Developer
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Libero unde omnis ullam, enim facilis
-                        possimus accusamus ab! Dolores mollitia odio quos. facilis,
-                        incidunt?
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
 
-    <footer>
-        <div class="footer">
-            <div class="footer-first">
-                <h3>Jyoti's Developer Portfolio</h3>
-            </div>
-            <div class="footer-second">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-            <div class="footer-third">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-            <div class="footer-fourth">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Contact</li>
-                </ul>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+           <img src="jyoti.jpg" alt="Jyoti Ranjan Pradhan profile">
+
+
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About<span>Me</span></h2>
+            <h3>Frontend developer & Computer Science Student</h3>
+        <p>"I'm a passionate frontend developer focused on building responsive websites using HTML, CSS, and JavaScript. I enjoy solving problems and constantly improving my skills in web development."</p>
+           
+        </div>
+    </section>
+
+   <section class="service" id="service">
+    <h2 class="heading">My<span>services</span></h2>
+
+    <div class="service-container">
+
+        <div class="service-box">
+            <i class="fa-solid fa-code"></i>
+            <h3>Web Development</h3>
+            <p>I create responsive and user-friendly websites using HTML, CSS, JavaScript, and basic React. I'm passionate about building clean designs and learning new technologies every day.</p>
+        </div>
+
+        <div class="service-box">
+            <i class="fa-solid fa-code"></i>
+            <h3>UI/UX Design</h3>
+            <p>I design simple and clean user interfaces using Figma and CSS. I focus on making the layout easy to use and visually appealing.</p>
+        </div>
+
+        <div class="service-box">
+            <i class="fa-solid fa-database"></i>
+            <h3>Database Management</h3>
+            <p>Basic knowledge of MySQL and database design for managing and storing application data efficiently.</p>
+        </div>
+
+    </div>
+</section>
+
+    <section class="project" id="project">
+    <h2 class="heading">Latest <span>Project</span></h2>
+
+    <div class="portfolio-container">
+
+        <div class="portfolio-box">
+           <img src="./image/scholarship-project.png.png" alt="Scholarship Management System">
+
+            <div class="portfolio-layer">
+                <h4>Scholarship Management System</h4>
+                <p>
+                    A web-based system developed to manage student scholarship applications,
+                    verification, approval, and record management efficiently.
+                </p>
             </div>
         </div>
-        <div class="footer-rights">
-            copy right &#169;Jyoti's Portfolio.com / All rights reserved
+
+    </div>
+</section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact<span>Me</span></h2>
+
+        <form action="https://formspree.io/f/meoknnzw">
+            <div class="input-box">
+                <input type="text" placeholder="Full name">
+                <input type="email" placeholder="Email address">
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Mobile number">
+                <input type="text" placeholder="Email subject">
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send message" class="btn" id="msg-btn">
+        </form>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy by Jyoti Ranjan | All rights reserved</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
         </div>
     </footer>
-
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <!-- Setup and start animation! -->
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Web Developer', 'Java Developer', 'Fullstack Dveloper',],
-            typeSpeed: 50,
-        });
-    </script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./script.js"></script>
 </body>
-
+</html>
 </html>
